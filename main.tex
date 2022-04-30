@@ -232,18 +232,13 @@ From the above figure;
 \begin{align}
     PR = \frac{PQ}{cos\theta}
 \end{align}
-
     $\frac{QR}{PR}$= tan $\theta$
-
 \begin{align}
     QR = tan \theta PQ
 \end{align}
-
 Given, PS=2cm PQ=5cm 
-
 take an angle;
 \angle RPQ = 60{\degree}
-
 \begin{align}
     let \vec{Q} &=\myvec{0 \\ 0}\\
     P will be; \Vec{P} &=\myvec{-5 \\ 0}\\
@@ -254,23 +249,18 @@ PT will be;\implies \frac{PS}{PT}=cos$\theta$
 \begin{align}
     T will be; \Vec{T}=\myvec{-(5-\frac{PS}{cos\theta}) \\ 0}\\
 \end{align}    
- 
 \begin{align}
     \frac{P^\prime S}{PS} = sin(90-\theta)
 \end{align}     
-
 \begin{align}
     P^\prime S = PS sin(90-\theta) 
 \end{align}  
-   
 \begin{align}
     \frac{P^\prime P}{PS} = cos(90-\theta)
 \end{align}   
-   
 \begin{align}
     P^\prime P = PS cos(90-\theta)
 \end{align}    
-
 \begin{align}
     \vec{S} &=\myvec{-(5 - PS cos\theta) \\ -P sin\theta}\\
 \end{align}
@@ -286,18 +276,17 @@ Generating the figure using python:
     \label{fig:my_label}
 \end{figure}
 
-The input and output parameters required for drawing the figure are available in the below table.\\
+The input and output parameters required for drawing the figure are available in the below table.
 \begin{table}[!h]
     \begin{tabular}{|c|c|c|} \hline
-        \textbf{Variable}   & \textbf{output paramter}  \\ \hline
-        $R$                 & 5 \\ \hline
-        $\angle RPQ$        & \angle 60 ^$\degree$ \\ \hline    
-        $\vec{P}$.          & \myvec{-5 \\ 0}\\ \hline
-        $\vec{Q}$           & \myvec{0 \\ 0}\\ \hline
-        $\vec{R}$           & \myvec{0 \\ -8.66}\\ \hline
-        $\vec{T}$           & \myvec{-1\\0} \\\hline
-        $\vec{S}$           & \myvec{-4 \\ -4.33} \\\hline
+        \textbf{input parameters}                & \textbf{output paramters}  \\ \hline
+          PQ,PS                                  & P,S,R,T-coordinates\\
+        \angle PQR, \angle PST, \angle SPT.      &\vec{P}=\myvec{-PQ\\0}\\
+        \vec{Q}=\myvec{0\\0}                     &\vec{R}=\myvec{0\\-tan\theta.PQ}\\
+                                                 &\vec{T}=\myvec{-(S-PS/cos\theta)\\-PSsin\theta}\\
+                                                 &\vec{S}=\myvec{-(S-PScos\theta)\\-PSsin\theta}\\ \hline
     \end{tabular}
 \end{table}
 
 \end{document}
+
